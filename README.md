@@ -1,6 +1,6 @@
 # s68_EduSound
 EduSound
-Title of Project:
+
 
 EduSound: Cost-effective Earphones for University Students
 

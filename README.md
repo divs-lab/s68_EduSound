@@ -49,6 +49,5 @@ This project is relevant because it addresses the needs of a large group of stud
 
 Additionally, working on this project will allow us to develop a range of skills, from hardware integration and audio tech to full-stack app development. We'll also gain insights into product design, user experience, and the complexities of combining both hardware and software in a consumer product.
 
-302/5000 words
-How did you like this assignment?
+
 

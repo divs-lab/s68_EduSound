@@ -1,29 +1,28 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-require('dotenv').config();
-
-const productRoutes = require('./routes/productRoutes');
-
+const express = require("express");
+const { MongoClient } = require("mongodb");
 const app = express();
+const port = 3000;
 
-// Middleware
-app.use(express.json());
-app.use(cors());
+// MongoDB connection string (replace with your own credentials)
+const url = "mongodb+srv://divyasingh5028:lucygreat@asap.6ch51.mongodb.net/?retryWrites=true&w=majority&appName=ASAP";
 
-// API Routes
-app.use('/api', productRoutes); // <-- Mount product routes
+// Connect to MongoDB
+const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
-// MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log('✅ Connected to MongoDB'))
-  .catch(error => console.log('❌ Database connection error:', error));
+client.connect()
+  .then(() => {
+    console.log("Connected to MongoDB Atlas!");
+  })
+  .catch((err) => {
+    console.error("Error connecting to MongoDB Atlas:", err);
+  });
 
-app.get('/', (req, res) => {
-    res.send('EduSound API is running...');
+// Define routes
+app.get('/abc', (req, res) => {
+    res.send("Hello World!")
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+// Start the server
+app.listen(port, () => {
+    console.log(`Server is running on Port ${port}`);
+});

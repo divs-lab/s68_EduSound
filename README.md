@@ -50,4 +50,6 @@ This project is relevant because it addresses the needs of a large group of stud
 Additionally, working on this project will allow us to develop a range of skills, from hardware integration and audio tech to full-stack app development. We'll also gain insights into product design, user experience, and the complexities of combining both hardware and software in a consumer product.
 
 
-Deployment link: https://s68-edusound.onrender.com
+Deployment link for backend: https://s68-edusound.onrender.com
+Deployment link for frontend: https://s68-edu-sound.vercel.app/
+

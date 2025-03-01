@@ -1,0 +1,108 @@
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f06, #ffba00); /* Add a gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container Style */
+  .container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    transform: translateY(-10%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(0); /* Add a smooth hover effect */
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Paragraph Text */
+  p {
+    font-size: 1.25rem;
+    color: #766c6c;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Subheading */
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* List Style */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffba00;
+    font-size: 1.3rem;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ffba00;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f06;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
